@@ -43,14 +43,14 @@ public class partial_swamp_algo {
         }
 
 
-        // here i am declared the arraylist where i am  adding my all p_best_value in the arrayList
+        // here I am declared the arraylist where I am  adding my all p_best_value in the arrayList
         ArrayList<Integer>  numbers = new ArrayList<Integer>();
         for (int i = 0; i < p_best_max.length; i++) {
             numbers.add(p_best_max[i]);
             System.out.println("Maximum value of partial" + (i+1) + ": " + p_best_max[i]);
         }
 
-        // here i am trying to take the g_best_value from given p_best_value
+        // here I am trying to take the g_best_value from given p_best_value
         int g_best_max = numbers.get(0);
         for (int i = 0; i < numbers.size(); i++) {
             if (numbers.get(i)>g_best_max) {
